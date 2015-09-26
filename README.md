@@ -1,6 +1,6 @@
 # window.run
 
-This is a small helper function which will try your function and catch any errors that may occur. In the event an error does occur, you can attach a handler onto ``run`` to handle any possible errors.
+This is a small helper function which will try your function and catch any errors that may occur. In the event an error does occur, you can attach a handler onto ``run`` to handle the error.
 
 ### Examples
 
