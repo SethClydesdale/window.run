@@ -5,8 +5,8 @@
       
       var handler = {
         handle : function(fn) {
-          if (this.errCode) {
-            fn(this.errCode);
+          if (this.error) {
+            fn(this.error);
           }
         }
       };
