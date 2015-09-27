@@ -1,17 +1,24 @@
 # window.run
 
-This is a small helper function which will try your function and catch any errors that may occur. In the event an error does occur, you can attach a handler onto ``run`` to handle the error.
+This is a small helper function which will try your function and catch any errors that may occur. The purpose of it is simple ; Run the function and catch erroneous code to prevent any damage during runtime. 
 
 ### Examples
 
-``congole`` is undefined so this exeception will automatically be caught and prevent any damage.
+**1. Automatic error catching**
+
+``congole`` is undefined so this exeception will automatically be caught, thus allowing JavaScript to continue executing as if nothing went wrong.
 ```javascript
 run(function() {
   congole.log('Hi !');
 });
+
+console.log('Phew, that was close..');
 ```
 
-To handle errors you can attach ``handle`` to the end of run.
+
+**2. Handling errors**
+
+To handle errors or view the error object, you can attach ``handle`` to the end of run. The function passed to ``handle`` will only be executed if an error occurs.
 ```javascript
 run(function() {
   congole.log('Hi !');
